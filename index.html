@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Thư Viện</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="admin-page">
+            <div class="admin-logo">
+                <img src="Logo.png" alt="Ảnh logo" class="admin-logo">
+            </div>
+            <div class="admin-title">
+                <h1 class="title-dhcn">TRUNG TÂM THÔNG TIN THƯ VIỆN</h1>
+                <h2 class="title-dhcn-mini">ĐẠI HỌC CÔNG NGHIỆP HÀ NỘI</h2>
+            </div>
+            <div class="admin-link">
+                <ul class="admin-link-funcion">
+                    <li><a href="#">Tài khoản của tôi</a></li>
+                    <li><a href="#">Đăng xuất</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Trang Chủ</a></li>
+                <li><a href="#" onclick="showSection('bookManagement')">Quản Lý Sách</a></li>
+                <li><a href="#">Liên Hệ</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <main>
+        <div id="home" class="content-section active">
+            <h1>Chào mừng đến với Hệ Thống Quản Lý</h1>
+            <p>Chọn một mục từ menu để bắt đầu.</p>
+        </div>
+        
+        <div id="bookManagement" class="content-section">
+            <h1>Quản Lý Sách</h1>
+            <form id="bookForm">
+                <h2>Thêm Sách</h2>
+                <label for="title">Tên sách:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="author">Tác giả:</label>
+                <input type="text" id="author" name="author" required>
+
+                <label for="year">Năm xuất bản:</label>
+                <input type="number" id="year" name="year" required>
+
+                <button type="submit">Thêm Sách</button>
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tên sách</th>
+                        <th>Tác giả</th>
+                        <th>Năm xuất bản</th>
+                        <th>Hành động</th>
+                    </tr>
+                </thead>
+                <tbody id="bookList">
+                    <!-- Các hàng sách sẽ được thêm vào đây -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

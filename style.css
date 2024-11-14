@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.admin-page {
+    height: 88px;
+    width: 100%; 
+    background-color: rgb(245, 245, 220);
+    display: flex;
+    align-items: center; 
+    padding: 0 20px;
+}
+
+.admin-logo {
+    width: 75px;
+    height: 75px;
+    flex-shrink: 0;
+}
+
+.admin-title {
+    margin-left: 400px;
+}
+
+.title-dhcn {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    color: blue;
+}
+
+.title-dhcn-mini {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+}
+
+.admin-link {
+    margin-left: auto;
+}
+
+.admin-link-funcion {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.admin-link a {
+    color: #1074C3;
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.menu {
+    width: 100%;
+    background-color: #1074C3;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu ul li {
+    display: inline;
+    margin: 0 15px;
+    background-color: #1074C3;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu ul li a:hover {
+    color: red;
+}
+
+.content-section {
+    display: none;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.content-section.active {
+    display: block;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+form h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.action-buttons button {
+    padding: 5px 10px;
+    margin: 0 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.edit-btn {
+    background-color: #f0ad4e;
+}
+
+.delete-btn {
+    background-color: #d9534f;
+}
+
+.action-buttons button:hover {
+    opacity: 0.8;
+}
